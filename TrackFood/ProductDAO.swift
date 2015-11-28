@@ -223,13 +223,6 @@ class ProductDAO {
             if name != nil {
 //                let prod: Products = Products()
                let nameString = String.fromCString(UnsafePointer<Int8>(name))
-//                prod.name = nameString!
-//                let quantString = String.fromCString(UnsafePointer<Int8>(quantity))
-//                prod.quantity = quantString!
-//                let threshString = String.fromCString(UnsafePointer<Int8>(threshold))
-//                prod.threshold = threshString!
-//                let flagS = String.fromCString(UnsafePointer<Int8>(flagStr))
-//                prod.slFlag = flagS!
                 print("name = \(nameString!)")
                 items.append(nameString!)
             } else {
