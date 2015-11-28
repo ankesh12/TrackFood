@@ -162,8 +162,8 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, UIImagePi
             prod.quantity = textQuantity.text!
             print(textQuantity.text)
             prod.threshold = textThreshold.text!
-            let imageData: NSData = UIImageJPEGRepresentation(prodImage.image!, 1.0)!
-            prod.Image = imageData
+//            let imageData: NSData = UIImageJPEGRepresentation(prodImage.image!, 1.0)!
+//            prod.Image = imageData
             let val = prodDao.updateProduct(prod)
             if val == true {
                 print("Success")
