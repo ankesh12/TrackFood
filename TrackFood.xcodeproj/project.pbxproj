@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24ADAA9612280248576456C4 /* Pods_TrackFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BCC58E1BFDE77D9B217E3F /* Pods_TrackFood.framework */; };
 		3F561AAF1C078CF200BED8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561AAE1C078CF200BED8EE /* AppDelegate.swift */; };
 		3F561AB11C078CF200BED8EE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561AB01C078CF200BED8EE /* FirstViewController.swift */; };
 		3F561AB31C078CF200BED8EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561AB21C078CF200BED8EE /* SecondViewController.swift */; };
@@ -15,6 +16,25 @@
 		3F561ABB1C078CF200BED8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F561AB91C078CF200BED8EE /* LaunchScreen.storyboard */; };
 		3F561AC61C078CF300BED8EE /* TrackFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561AC51C078CF300BED8EE /* TrackFoodTests.swift */; };
 		3F561AD11C078CF300BED8EE /* TrackFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561AD01C078CF300BED8EE /* TrackFoodUITests.swift */; };
+		3F561AE31C078D2B00BED8EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561ADE1C078D2B00BED8EE /* DetailViewController.swift */; };
+		3F561AE41C078D2B00BED8EE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561ADF1C078D2B00BED8EE /* MasterViewController.swift */; };
+		3F561AE51C078D2B00BED8EE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F561AE01C078D2B00BED8EE /* Product.swift */; };
+		3F561AE61C078D2B00BED8EE /* Unknown-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F561AE11C078D2B00BED8EE /* Unknown-3.jpeg */; };
+		3F561AE71C078D2B00BED8EE /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F561AE21C078D2B00BED8EE /* Unknown.jpeg */; };
+		3F561AE91C0791C900BED8EE /* the-button-859346_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F561AE81C0791C900BED8EE /* the-button-859346_640.png */; };
+		3F7105D71C08A00A007568FA /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105D61C08A00A007568FA /* AddProductViewController.swift */; };
+		3F7105D91C08ADFB007568FA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7105D81C08ADFB007568FA /* libsqlite3.tbd */; };
+		3F7105DC1C08AE48007568FA /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105DB1C08AE48007568FA /* Bridging-Header.m */; };
+		3F7105DE1C08B13B007568FA /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105DD1C08B13B007568FA /* ProductDAO.swift */; };
+		3F77BA6A1C0A01CE002A23C7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77BA691C0A01CE002A23C7 /* Util.swift */; settings = {ASSET_TAGS = (); }; };
+		CBDD49D01C0877B900219DEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBDD49CF1C0877B900219DEC /* Podfile */; };
+		CBDD49D51C08788E00219DEC /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */; };
+		CBDD49D61C08788E00219DEC /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D31C08788E00219DEC /* GooglePlace.swift */; };
+		CBDD49D71C08788E00219DEC /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D41C08788E00219DEC /* PlaceMarker.swift */; };
+		CBDD49E51C08830900219DEC /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49E21C08830900219DEC /* MarkerInfoView.swift */; };
+		CBDD49E61C08830900219DEC /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDD49E31C08830900219DEC /* MarkerInfoView.xib */; };
+		CBDD49E71C08830900219DEC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49E41C08830900219DEC /* UIViewExtension.swift */; };
+		CBDD49E91C089B6900219DEC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49E81C089B6900219DEC /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19BCC58E1BFDE77D9B217E3F /* Pods_TrackFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F561AAB1C078CF200BED8EE /* TrackFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F561AAE1C078CF200BED8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F561AB01C078CF200BED8EE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +70,28 @@
 		3F561ACC1C078CF300BED8EE /* TrackFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F561AD01C078CF300BED8EE /* TrackFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFoodUITests.swift; sourceTree = "<group>"; };
 		3F561AD21C078CF300BED8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F561ADE1C078D2B00BED8EE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3F561ADF1C078D2B00BED8EE /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3F561AE01C078D2B00BED8EE /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3F561AE11C078D2B00BED8EE /* Unknown-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-3.jpeg"; sourceTree = "<group>"; };
+		3F561AE21C078D2B00BED8EE /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
+		3F561AE81C0791C900BED8EE /* the-button-859346_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-button-859346_640.png"; sourceTree = "<group>"; };
+		3F7105D61C08A00A007568FA /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		3F7105D81C08ADFB007568FA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3F7105DA1C08AE48007568FA /* TrackFood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackFood-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F7105DB1C08AE48007568FA /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
+		3F7105DD1C08B13B007568FA /* ProductDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
+		3F77BA691C0A01CE002A23C7 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = ../../../TrackFood/TrackFood/Util.swift; sourceTree = "<group>"; };
+		BCD6FDAC21E0350B39D7596B /* Pods-TrackFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackFood/Pods-TrackFood.release.xcconfig"; sourceTree = "<group>"; };
+		CBDD49CF1C0877B900219DEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		CBDD49D31C08788E00219DEC /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		CBDD49D41C08788E00219DEC /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		CBDD49E21C08830900219DEC /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		CBDD49E31C08830900219DEC /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		CBDD49E41C08830900219DEC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CBDD49E81C089B6900219DEC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		D91407AA0ECC860DB8D02859 /* Pods-TrackFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackFood/Pods-TrackFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7105D91C08ADFB007568FA /* libsqlite3.tbd in Frameworks */,
+				24ADAA9612280248576456C4 /* Pods_TrackFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +124,14 @@
 		3F561AA21C078CF200BED8EE = {
 			isa = PBXGroup;
 			children = (
+				CBDD49CF1C0877B900219DEC /* Podfile */,
+				3F7105D81C08ADFB007568FA /* libsqlite3.tbd */,
 				3F561AAD1C078CF200BED8EE /* TrackFood */,
 				3F561AC41C078CF300BED8EE /* TrackFoodTests */,
 				3F561ACF1C078CF300BED8EE /* TrackFoodUITests */,
 				3F561AAC1C078CF200BED8EE /* Products */,
+				851F8B2F1186F254F09C80B5 /* Pods */,
+				AD53D692E550FD1479790B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +148,16 @@
 		3F561AAD1C078CF200BED8EE /* TrackFood */ = {
 			isa = PBXGroup;
 			children = (
+				3F77BA691C0A01CE002A23C7 /* Util.swift */,
+				CBDD49E81C089B6900219DEC /* MapViewController.swift */,
+				CBDD49E11C0882F300219DEC /* View */,
+				CBDD49D11C08788E00219DEC /* Model */,
+				3F561AE81C0791C900BED8EE /* the-button-859346_640.png */,
+				3F561ADE1C078D2B00BED8EE /* DetailViewController.swift */,
+				3F561ADF1C078D2B00BED8EE /* MasterViewController.swift */,
+				3F561AE01C078D2B00BED8EE /* Product.swift */,
+				3F561AE11C078D2B00BED8EE /* Unknown-3.jpeg */,
+				3F561AE21C078D2B00BED8EE /* Unknown.jpeg */,
 				3F561AAE1C078CF200BED8EE /* AppDelegate.swift */,
 				3F561AB01C078CF200BED8EE /* FirstViewController.swift */,
 				3F561AB21C078CF200BED8EE /* SecondViewController.swift */,
@@ -106,6 +165,10 @@
 				3F561AB71C078CF200BED8EE /* Assets.xcassets */,
 				3F561AB91C078CF200BED8EE /* LaunchScreen.storyboard */,
 				3F561ABC1C078CF200BED8EE /* Info.plist */,
+				3F7105D61C08A00A007568FA /* AddProductViewController.swift */,
+				3F7105DB1C08AE48007568FA /* Bridging-Header.m */,
+				3F7105DA1C08AE48007568FA /* TrackFood-Bridging-Header.h */,
+				3F7105DD1C08B13B007568FA /* ProductDAO.swift */,
 			);
 			path = TrackFood;
 			sourceTree = "<group>";
@@ -128,6 +191,44 @@
 			path = TrackFoodUITests;
 			sourceTree = "<group>";
 		};
+		851F8B2F1186F254F09C80B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D91407AA0ECC860DB8D02859 /* Pods-TrackFood.debug.xcconfig */,
+				BCD6FDAC21E0350B39D7596B /* Pods-TrackFood.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD53D692E550FD1479790B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19BCC58E1BFDE77D9B217E3F /* Pods_TrackFood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBDD49D11C08788E00219DEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */,
+				CBDD49D31C08788E00219DEC /* GooglePlace.swift */,
+				CBDD49D41C08788E00219DEC /* PlaceMarker.swift */,
+			);
+			name = Model;
+			path = ../Model;
+			sourceTree = "<group>";
+		};
+		CBDD49E11C0882F300219DEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD49E21C08830900219DEC /* MarkerInfoView.swift */,
+				CBDD49E31C08830900219DEC /* MarkerInfoView.xib */,
+				CBDD49E41C08830900219DEC /* UIViewExtension.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F561AD51C078CF300BED8EE /* Build configuration list for PBXNativeTarget "TrackFood" */;
 			buildPhases = (
+				3A7E4D709BA76586F5AB9E7B /* Check Pods Manifest.lock */,
 				3F561AA71C078CF200BED8EE /* Sources */,
 				3F561AA81C078CF200BED8EE /* Frameworks */,
 				3F561AA91C078CF200BED8EE /* Resources */,
+				EE361BDFFA1758CA57C2DBA7 /* Embed Pods Frameworks */,
+				DE0AD084DA7353194D78499D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,12 +294,13 @@
 		3F561AA31C078CF200BED8EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Nus;
 				TargetAttributes = {
 					3F561AAA1C078CF200BED8EE = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = AN283F754U;
+						DevelopmentTeam = 83GFZ4ZKFR;
 					};
 					3F561AC01C078CF300BED8EE = {
 						CreatedOnToolsVersion = 7.0;
@@ -235,8 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F561ABB1C078CF200BED8EE /* LaunchScreen.storyboard in Resources */,
+				3F561AE91C0791C900BED8EE /* the-button-859346_640.png in Resources */,
 				3F561AB81C078CF200BED8EE /* Assets.xcassets in Resources */,
+				3F561AE61C078D2B00BED8EE /* Unknown-3.jpeg in Resources */,
+				CBDD49E61C08830900219DEC /* MarkerInfoView.xib in Resources */,
 				3F561AB61C078CF200BED8EE /* Main.storyboard in Resources */,
+				CBDD49D01C0877B900219DEC /* Podfile in Resources */,
+				3F561AE71C078D2B00BED8EE /* Unknown.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,14 +366,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A7E4D709BA76586F5AB9E7B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE0AD084DA7353194D78499D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackFood/Pods-TrackFood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE361BDFFA1758CA57C2DBA7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackFood/Pods-TrackFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F561AA71C078CF200BED8EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDD49E71C08830900219DEC /* UIViewExtension.swift in Sources */,
+				CBDD49E51C08830900219DEC /* MarkerInfoView.swift in Sources */,
+				3F7105DC1C08AE48007568FA /* Bridging-Header.m in Sources */,
+				3F77BA6A1C0A01CE002A23C7 /* Util.swift in Sources */,
+				3F561AE41C078D2B00BED8EE /* MasterViewController.swift in Sources */,
+				CBDD49D61C08788E00219DEC /* GooglePlace.swift in Sources */,
+				CBDD49D71C08788E00219DEC /* PlaceMarker.swift in Sources */,
+				3F7105D71C08A00A007568FA /* AddProductViewController.swift in Sources */,
 				3F561AB31C078CF200BED8EE /* SecondViewController.swift in Sources */,
 				3F561AAF1C078CF200BED8EE /* AppDelegate.swift in Sources */,
+				CBDD49D51C08788E00219DEC /* GoogleDataProvider.swift in Sources */,
 				3F561AB11C078CF200BED8EE /* FirstViewController.swift in Sources */,
+				3F561AE31C078D2B00BED8EE /* DetailViewController.swift in Sources */,
+				3F561AE51C078D2B00BED8EE /* Product.swift in Sources */,
+				CBDD49E91C089B6900219DEC /* MapViewController.swift in Sources */,
+				3F7105DE1C08B13B007568FA /* ProductDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,23 +572,34 @@
 		};
 		3F561AD61C078CF300BED8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91407AA0ECC860DB8D02859 /* Pods-TrackFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrackFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.iss.wlad.TrackFood;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.iss.wlad.ankesh.TrackFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackFood/TrackFood-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3F561AD71C078CF300BED8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD6FDAC21E0350B39D7596B /* Pods-TrackFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrackFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.iss.wlad.TrackFood;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.iss.wlad.ankesh.TrackFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackFood/TrackFood-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -488,6 +670,7 @@
 				3F561AD71C078CF300BED8EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F561AD81C078CF300BED8EE /* Build configuration list for PBXNativeTarget "TrackFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +679,7 @@
 				3F561ADA1C078CF300BED8EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F561ADB1C078CF300BED8EE /* Build configuration list for PBXNativeTarget "TrackFoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +688,7 @@
 				3F561ADD1C078CF300BED8EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
