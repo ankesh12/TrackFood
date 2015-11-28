@@ -236,26 +236,21 @@ class ProductDAO {
         return items
     }
     
-    func belowCount() -> Bool {
+    func belowCount() -> Int {
         var prodList: NSMutableArray!
         var count = 0
-        var status: Bool
         prodList = selectAllProduct()
         let length = prodList.count
         
-        for index in 0...length{
+        for index in 0..<length{
             let prod = prodList[index] as! Products
-            if prod.quantity < prod.threshold{
+            let thresh: Int = Int(prod.threshold)!
+            let quant: Int = Int(prod.quantity)!
+            if quant < thresh {
                 count = count + 1
             }
         }
-        if count > 0{
-            status = true
-        }
-        else{
-            status = false
-        }
-        return status
+        return count
     }
     
     func dummyInsert(){

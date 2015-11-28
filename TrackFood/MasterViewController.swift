@@ -24,7 +24,7 @@ class MasterViewController: UITableViewController {
         
         //products = Products.getAllExisting()
         prodDao = ProductDAO()
-        //prodDao.dummyInsert()
+        prodDao.dummyInsert()
         products = prodDao.selectAllProduct()
         
         //let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
@@ -34,26 +34,8 @@ class MasterViewController: UITableViewController {
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        //Local Notification
-        let dateComp:NSDateComponents = NSDateComponents()
-        dateComp.year = 2015;
-        dateComp.month = 11;
-        dateComp.day = 29;
-        dateComp.hour = 01;
-        dateComp.minute = 14;
-        dateComp.timeZone = NSTimeZone.systemTimeZone()
-        
-        let calender:NSCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)!
-        let date:NSDate = calender.dateFromComponents(dateComp)!
-        
-        
-        let notification:UILocalNotification = UILocalNotification()
-        notification.category = "FIRST_CATEGORY"
-        notification.alertBody = "Some Items running low"
-        notification.fireDate = date
-        
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        notification.repeatInterval=(NSCalendarUnit.NSMinuteCalendarUnit)
+        let timer = NSTimer(timeInterval: 10, target: self, selector: Selector("notifcall"), userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(timer, forMode:NSDefaultRunLoopMode)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -130,6 +112,26 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
+    }
+    
+    func notifcall()
+    {
+        let count = prodDao.belowCount();
+        print (count);
+        
+        if count > 0 {
+            let notification:UILocalNotification = UILocalNotification()
+            notification.category = "FIRST_CATEGORY"
+            notification.alertBody = "Some Items running low"
+            notification.fireDate = NSDate(timeInterval: 2, sinceDate: NSDate())
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
+        else {
+            
+            print("no products bwlow")
+        }
+        
+        
     }
 
 
