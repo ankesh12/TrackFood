@@ -25,7 +25,7 @@ class ProductDAO {
         let docsDir = paths + "/products.sqlite"
         
         if (sqlite3_open(docsDir,&productDB) == SQLITE_OK) {
-            let sql = "CREATE TABLE IF NOT EXISTS PRODUCTS (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, QUANTITY TEXT, THRESHOLD TEXT, SLFLAG TEXT, IMAGE BLOB)"
+            let sql = "CREATE TABLE IF NOT EXISTS PRODUCTS (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, QUANTITY TEXT, THRESHOLD TEXT, SLFLAG TEXT)"
             
             if sqlite3_exec(productDB, sql, nil, nil, nil) != SQLITE_OK {
                 print("Failed to create table")
@@ -43,7 +43,7 @@ class ProductDAO {
     func prepareStatement() {
         var sqlString: String
         
-        sqlString = "INSERT INTO PRODUCTS (name, quantity, threshold,slflag, image) VALUES (?,?,?,?,?)"
+        sqlString = "INSERT INTO PRODUCTS (name, quantity, threshold,slflag) VALUES (?,?,?,?)"
         var cSql = sqlString.cStringUsingEncoding(NSUTF8StringEncoding)
         sqlite3_prepare_v2(productDB, cSql!, -1, &insertStatement, nil)
         
@@ -73,14 +73,14 @@ class ProductDAO {
         let quantityStr = prod.quantity as NSString?
         let thresholdStr = prod.threshold as NSString?
         let flagStr = prod.slFlag as NSString?
-        let imageS = prod.Image as NSData!
+        //let imageS = prod.Image as NSData!
         var status: Bool
         
         sqlite3_bind_text(insertStatement, 1, nameStr!.UTF8String, -1, SQLITE_TRANSIENT);
         sqlite3_bind_text(insertStatement, 2, quantityStr!.UTF8String, -1, SQLITE_TRANSIENT);
         sqlite3_bind_text(insertStatement, 3, thresholdStr!.UTF8String, -1, SQLITE_TRANSIENT);
         sqlite3_bind_text(insertStatement, 4, flagStr!.UTF8String, -1, SQLITE_TRANSIENT);
-        sqlite3_bind_blob(insertStatement, 5, imageS.bytes, Int32(imageS.length), SQLITE_TRANSIENT);
+        //sqlite3_bind_blob(insertStatement, 5, imageS!.bytes, Int32(imageS!.length), SQLITE_TRANSIENT);
         
         if (sqlite3_step(insertStatement) == SQLITE_DONE) {
             status = true;
@@ -134,9 +134,9 @@ class ProductDAO {
             let name = sqlite3_column_text(selectAllStatement, 1)
             let quantity = sqlite3_column_text(selectAllStatement, 2)
             let threshold = sqlite3_column_text(selectAllStatement, 3)
-            let len = sqlite3_column_bytes(selectAllStatement, 5)
-            let point = sqlite3_column_blob(selectAllStatement, 5)
-            let image: NSData = NSData(bytes: point, length: Int(len))
+//            let len = sqlite3_column_bytes(selectAllStatement, 5)
+//            let point = sqlite3_column_blob(selectAllStatement, 5)
+            //let image: NSData = NSData(bytes: point, length: Int(len))
             
             if name != nil {
                 let prod: Products = Products()
@@ -146,7 +146,7 @@ class ProductDAO {
                 prod.quantity = quantString!
                 let threshString = String.fromCString(UnsafePointer<Int8>(threshold))
                 prod.threshold = threshString!
-                prod.Image = image
+                //prod.Image = image
                 print("name = \(nameString!)")
                 items.addObject(prod);
             } else {
