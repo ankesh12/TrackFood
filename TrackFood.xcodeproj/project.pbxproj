@@ -27,6 +27,7 @@
 		3F7105DC1C08AE48007568FA /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105DB1C08AE48007568FA /* Bridging-Header.m */; };
 		3F7105DE1C08B13B007568FA /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105DD1C08B13B007568FA /* ProductDAO.swift */; };
 		3F77BA6C1C0A1977002A23C7 /* UtilityFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77BA6B1C0A1977002A23C7 /* UtilityFile.swift */; settings = {ASSET_TAGS = (); }; };
+		3FCF7F251C0A4B770052030B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF7F241C0A4B770052030B /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDD49D01C0877B900219DEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBDD49CF1C0877B900219DEC /* Podfile */; };
 		CBDD49D51C08788E00219DEC /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */; };
 		CBDD49D61C08788E00219DEC /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D31C08788E00219DEC /* GooglePlace.swift */; };
@@ -82,6 +83,7 @@
 		3F7105DB1C08AE48007568FA /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
 		3F7105DD1C08B13B007568FA /* ProductDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		3F77BA6B1C0A1977002A23C7 /* UtilityFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFile.swift; sourceTree = "<group>"; };
+		3FCF7F241C0A4B770052030B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BCD6FDAC21E0350B39D7596B /* Pods-TrackFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackFood/Pods-TrackFood.release.xcconfig"; sourceTree = "<group>"; };
 		CBDD49CF1C0877B900219DEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		3F561AAD1C078CF200BED8EE /* TrackFood */ = {
 			isa = PBXGroup;
 			children = (
+				3FCF7F241C0A4B770052030B /* LoginViewController.swift */,
 				CBDD49E81C089B6900219DEC /* MapViewController.swift */,
 				CBDD49E11C0882F300219DEC /* View */,
 				CBDD49D11C08788E00219DEC /* Model */,
@@ -432,6 +435,7 @@
 				CBDD49D51C08788E00219DEC /* GoogleDataProvider.swift in Sources */,
 				3F561AB11C078CF200BED8EE /* FirstViewController.swift in Sources */,
 				3F561AE31C078D2B00BED8EE /* DetailViewController.swift in Sources */,
+				3FCF7F251C0A4B770052030B /* LoginViewController.swift in Sources */,
 				3F561AE51C078D2B00BED8EE /* Product.swift in Sources */,
 				CBDD49E91C089B6900219DEC /* MapViewController.swift in Sources */,
 				3F7105DE1C08B13B007568FA /* ProductDAO.swift in Sources */,
