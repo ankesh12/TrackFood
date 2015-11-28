@@ -18,6 +18,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey(googleMapsApiKey)
+        
+        UtilityFile.copyFile("products.sqlite")
+        
+        //Notification
+        // Actions
+        let firstAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        firstAction.identifier = "FIRST_ACTION"
+        firstAction.title = "Ignore"
+        
+        firstAction.activationMode = UIUserNotificationActivationMode.Background
+        firstAction.destructive = true
+        firstAction.authenticationRequired = false
+        
+        let secondAction:UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        secondAction.identifier = "SECOND_ACTION"
+        secondAction.title = "See List"
+        
+        secondAction.activationMode = UIUserNotificationActivationMode.Foreground
+        secondAction.destructive = false
+        secondAction.authenticationRequired = false
+        
+        
+        
+        
+        
+        // category
+        
+        let firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
+        firstCategory.identifier = "FIRST_CATEGORY"
+        
+        let defaultActions:NSArray = [firstAction, secondAction]
+        let minimalActions:NSArray = [firstAction, secondAction]
+        
+        firstCategory.setActions(defaultActions as! [UIUserNotificationAction], forContext:UIUserNotificationActionContext.Default)
+        firstCategory.setActions(minimalActions as! [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Minimal)
+        
+        // NSSet of all our categories
+        
+        let categories:NSSet = NSSet(objects: firstCategory)
+        
+        
+        
+        let types:UIUserNotificationType = UIUserNotificationType.Alert
+        let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: categories as! Set<UIUserNotificationCategory>)
+        
+        UIApplication.sharedApplication().registerUserNotificationSettings(mySettings)
+        
         return true
     }
 

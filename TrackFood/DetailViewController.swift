@@ -42,20 +42,24 @@ class DetailViewController: UIViewController {
         prodName.text = editingProduct.name
         quantity.text = editingProduct.quantity
         threshold.text = editingProduct.threshold
-        if(editingProduct.name == "Apple"){
-            let imageName = "Unknown.jpeg"
-            let imageS = UIImage(named: imageName)
-            imageIcon.image = imageS
-            //imageIcon.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-            //view.addSubview(imageIcon)
-        }
-        else{
-            let imageName = "Unknown-3.jpeg"
-            let imageS = UIImage(named: imageName)
-            imageIcon.image = imageS!
-            //imageIcon.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-            //view.addSubview(imageIcon)
-        }
+        
+        //BLOB 
+        let prodImage: UIImage = UIImage(data: editingProduct.Image)!
+        imageIcon.image = prodImage
+//        if(editingProduct.name == "Apple"){
+//            let imageName = "Unknown.jpeg"
+//            let imageS = UIImage(named: imageName)
+//            imageIcon.image = imageS
+//            //imageIcon.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+//            //view.addSubview(imageIcon)
+//        }
+//        else{
+//            let imageName = "Unknown-3.jpeg"
+//            let imageS = UIImage(named: imageName)
+//            imageIcon.image = imageS!
+//            //imageIcon.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+//            //view.addSubview(imageIcon)
+//        }
     }
     
     override func viewWillAppear(animated: Bool) {

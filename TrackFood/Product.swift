@@ -22,11 +22,12 @@ class Products{
         self.slFlag="0"
     }
     
-    init (name:String, quantity:String, threshold:String, slFlag: String) {
+    init (name:String, quantity:String, threshold:String, slFlag: String, image: NSData) {
         self.name = name
         self.quantity = quantity
         self.threshold = threshold
         self.slFlag = slFlag
+        self.Image = image
     }
     
     class func getAllExisting() -> NSMutableArray {

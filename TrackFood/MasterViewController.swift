@@ -33,6 +33,27 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        //Local Notification
+        let dateComp:NSDateComponents = NSDateComponents()
+        dateComp.year = 2015;
+        dateComp.month = 11;
+        dateComp.day = 29;
+        dateComp.hour = 01;
+        dateComp.minute = 14;
+        dateComp.timeZone = NSTimeZone.systemTimeZone()
+        
+        let calender:NSCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)!
+        let date:NSDate = calender.dateFromComponents(dateComp)!
+        
+        
+        let notification:UILocalNotification = UILocalNotification()
+        notification.category = "FIRST_CATEGORY"
+        notification.alertBody = "Some Items running low"
+        notification.fireDate = date
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        notification.repeatInterval=(NSCalendarUnit.NSMinuteCalendarUnit)
     }
 
     override func viewWillAppear(animated: Bool) {

@@ -24,6 +24,13 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, UIImagePi
     var typeCheck: Bool = false
     
     var editingProduct: Products?
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        prodName.resignFirstResponder()
+        textQuantity.resignFirstResponder()
+        textThreshold.resignFirstResponder()
+        return true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -155,6 +162,8 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, UIImagePi
             prod.quantity = textQuantity.text!
             print(textQuantity.text)
             prod.threshold = textThreshold.text!
+            let imageData: NSData = UIImageJPEGRepresentation(prodImage.image!, 1.0)!
+            prod.Image = imageData
             let val = prodDao.updateProduct(prod)
             if val == true {
                 print("Success")
@@ -169,6 +178,8 @@ class AddProductViewController: UIViewController, UITextFieldDelegate, UIImagePi
             prod.name = prodName.text!
             prod.quantity = textQuantity.text!
             prod.threshold = textThreshold.text!
+            let imageData: NSData = UIImageJPEGRepresentation(prodImage.image!, 1.0)!
+            prod.Image = imageData
             let val = prodDao.createProduct(prod)
             if val == true {
                 print("Success")
