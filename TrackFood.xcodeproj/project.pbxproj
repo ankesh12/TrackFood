@@ -26,7 +26,7 @@
 		3F7105D91C08ADFB007568FA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7105D81C08ADFB007568FA /* libsqlite3.tbd */; };
 		3F7105DC1C08AE48007568FA /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105DB1C08AE48007568FA /* Bridging-Header.m */; };
 		3F7105DE1C08B13B007568FA /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7105DD1C08B13B007568FA /* ProductDAO.swift */; };
-		3F77BA6A1C0A01CE002A23C7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77BA691C0A01CE002A23C7 /* Util.swift */; settings = {ASSET_TAGS = (); }; };
+		3F77BA6A1C0A01CE002A23C7 /* UtilFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77BA691C0A01CE002A23C7 /* UtilFile.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDD49D01C0877B900219DEC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBDD49CF1C0877B900219DEC /* Podfile */; };
 		CBDD49D51C08788E00219DEC /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */; };
 		CBDD49D61C08788E00219DEC /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDD49D31C08788E00219DEC /* GooglePlace.swift */; };
@@ -81,7 +81,7 @@
 		3F7105DA1C08AE48007568FA /* TrackFood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackFood-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F7105DB1C08AE48007568FA /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
 		3F7105DD1C08B13B007568FA /* ProductDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
-		3F77BA691C0A01CE002A23C7 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = ../../../TrackFood/TrackFood/Util.swift; sourceTree = "<group>"; };
+		3F77BA691C0A01CE002A23C7 /* UtilFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UtilFile.swift; path = ../../../TrackFood/TrackFood/UtilFile.swift; sourceTree = "<group>"; };
 		BCD6FDAC21E0350B39D7596B /* Pods-TrackFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackFood/Pods-TrackFood.release.xcconfig"; sourceTree = "<group>"; };
 		CBDD49CF1C0877B900219DEC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CBDD49D21C08788E00219DEC /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		3F561AAD1C078CF200BED8EE /* TrackFood */ = {
 			isa = PBXGroup;
 			children = (
-				3F77BA691C0A01CE002A23C7 /* Util.swift */,
+				3F77BA691C0A01CE002A23C7 /* UtilFile.swift */,
 				CBDD49E81C089B6900219DEC /* MapViewController.swift */,
 				CBDD49E11C0882F300219DEC /* View */,
 				CBDD49D11C08788E00219DEC /* Model */,
@@ -422,7 +422,7 @@
 				CBDD49E71C08830900219DEC /* UIViewExtension.swift in Sources */,
 				CBDD49E51C08830900219DEC /* MarkerInfoView.swift in Sources */,
 				3F7105DC1C08AE48007568FA /* Bridging-Header.m in Sources */,
-				3F77BA6A1C0A01CE002A23C7 /* Util.swift in Sources */,
+				3F77BA6A1C0A01CE002A23C7 /* UtilFile.swift in Sources */,
 				3F561AE41C078D2B00BED8EE /* MasterViewController.swift in Sources */,
 				CBDD49D61C08788E00219DEC /* GooglePlace.swift in Sources */,
 				CBDD49D71C08788E00219DEC /* PlaceMarker.swift in Sources */,
