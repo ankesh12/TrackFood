@@ -222,7 +222,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string: "http://localhost:5000/register")!
+            var url:NSURL = NSURL(string: "http://172.23.132.82:5000/register")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             
@@ -270,7 +270,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             
             NSLog("PostData: %@",post);
             
-            var url:NSURL = NSURL(string: "http://localhost:5000/login")!
+            var url:NSURL = NSURL(string: "http://172.23.132.82:5000/login")!
             
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             
